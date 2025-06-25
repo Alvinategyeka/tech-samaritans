@@ -1,133 +1,89 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Samaritans | Digital Empowerment NGO</title>
+    <title>Digital Bridge Builders Africa | Empowering Communities Through Tech</title>
     
-    <!-- Meta Tags for SEO -->
-    <meta name="description" content="Tech Samaritans provides free digital skills training to underserved communities. Learn Google Business, AI tools, social media marketing and web development.">
-    <meta name="keywords" content="NGO, tech training, digital literacy, Google Business, AI education">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
-    </button>
+    <!-- Animated Background -->
+    <div id="particles-js"></div>
     
     <!-- Navigation -->
     <nav class="glass-nav">
-        <div class="nav-container">
+        <div class="container">
             <a href="/" class="logo">
-                <img src="assets/logo.svg" alt="Tech Samaritans" width="180">
+                <img src="assets/images/logo.svg" alt="Digital Bridge Builders Africa" width="180">
             </a>
-            
             <div class="nav-links">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#programs" class="nav-link">Programs</a>
-                <a href="#impact" class="nav-link">Impact</a>
-                <a href="#get-involved" class="nav-link">Get Involved</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="#" class="cta-nav">Donate</a>
+                <a href="/" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="programs.html">Programs</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cta-button">Donate</a>
             </div>
-            
-            <button class="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
     
     <!-- Hero Section -->
-    <header class="hero">
-        <canvas id="particles-js"></canvas>
-        <div class="hero-content">
-            <h1 data-aos="fade-up">Bridging the <span class="text-gradient">Digital Divide</span></h1>
-            <p data-aos="fade-up" data-aos-delay="100">Empowering underserved communities with essential tech skills through free workshops, digital tools, and ongoing support.</p>
-            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
-                <a href="#programs" class="btn-primary">Explore Programs</a>
-                <a href="#" class="btn-secondary">Volunteer Now <i class="fas fa-arrow-right"></i></a>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Bridging the <span>Digital Divide</span> in Africa</h1>
+                <p class="subtitle">Empowering women, youth and small businesses with essential tech skills for economic growth</p>
+                <div class="hero-buttons">
+                    <a href="programs.html" class="btn-primary">Our Programs</a>
+                    <a href="contact.html" class="btn-secondary">Join Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="assets/images/hero-image.png" alt="Digital skills training" class="floating">
             </div>
         </div>
-        
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </div>
-    </header>
+    </section>
     
     <!-- Stats Bar -->
     <section class="stats-bar">
-        <div class="stat" data-aos="fade-up">
-            <h3 data-count="2500">0</h3>
-            <p>People Trained</p>
-        </div>
-        <div class="stat" data-aos="fade-up" data-aos-delay="100">
-            <h3 data-count="120">0</h3>
-            <p>Workshops Conducted</p>
-        </div>
-        <div class="stat" data-aos="fade-up" data-aos-delay="200">
-            <h3 data-count="85">0</h3>
-            <p>Businesses Digitized</p>
-        </div>
-        <div class="stat" data-aos="fade-up" data-aos-delay="300">
-            <h3 data-count="15">0</h3>
-            <p>Communities Reached</p>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section id="about" class="section about-section">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-content" data-aos="fade-right">
-                    <h2 class="section-title">We Are <span>Tech Samaritans</span></h2>
-                    <p>Founded in 2023, we're a non-profit organization dedicated to closing the digital skills gap through hands-on training programs in:</p>
-                    <ul class="tech-list">
-                        <li><i class="fas fa-check-circle"></i> Google Business & Maps</li>
-                        <li><i class="fas fa-check-circle"></i> Social Media Marketing</li>
-                        <li><i class="fas fa-check-circle"></i> AI Productivity Tools</li>
-                        <li><i class="fas fa-check-circle"></i> Low-Cost Website Development</li>
-                    </ul>
-                    <a href="#" class="btn-outline">Our Full Story <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="about-image" data-aos="fade-left">
-                    <div class="image-container">
-                        <img src="assets/workshop.jpg" alt="Tech workshop session" class="main-img">
-                        <div class="tech-badge">
-                            <img src="assets/google-badge.svg" alt="Google Digital Skills">
-                        </div>
-                    </div>
-                </div>
+            <div class="stat" data-aos="fade-up">
+                <h3 data-count="500">0</h3>
+                <p>People Trained</p>
+            </div>
+            <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                <h3 data-count="25">0</h3>
+                <p>Communities Reached</p>
+            </div>
+            <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                <h3 data-count="85">0</h3>
+                <p>Businesses Digitized</p>
+            </div>
+            <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                <h3 data-count="100">0</h3>
+                <p>Workshops Conducted</p>
             </div>
         </div>
     </section>
     
-    <!-- Programs Section -->
-    <section id="programs" class="section programs-section">
+    <!-- Programs Preview -->
+    <section class="programs-preview">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Our <span>Programs</span></h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Practical, hands-on training for real-world impact</p>
+            <h2 class="section-title" data-aos="fade-up">Our <span>Core Programs</span></h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Practical skills for real-world impact</p>
             
             <div class="programs-grid">
                 <div class="program-card" data-aos="fade-up" data-aos-delay="200">
@@ -135,13 +91,8 @@
                         <i class="fas fa-map-marked-alt"></i>
                     </div>
                     <h3>Google Business Setup</h3>
-                    <p>Get your business on Google Maps and Search with our step-by-step guidance.</p>
-                    <ul class="program-features">
-                        <li>Free listing creation</li>
-                        <li>Review management</li>
-                        <li>Local SEO basics</li>
-                    </ul>
-                    <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Get your business discovered online with free Google listings</p>
+                    <a href="programs.html#google-business" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 
                 <div class="program-card" data-aos="fade-up" data-aos-delay="300">
@@ -149,13 +100,8 @@
                         <i class="fas fa-hashtag"></i>
                     </div>
                     <h3>Social Media Mastery</h3>
-                    <p>Learn to grow your business using Facebook, Instagram and WhatsApp.</p>
-                    <ul class="program-features">
-                        <li>Content creation</li>
-                        <li>Audience engagement</li>
-                        <li>Free tools</li>
-                    </ul>
-                    <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Grow your customer base using Facebook, Instagram & WhatsApp</p>
+                    <a href="programs.html#social-media" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 
                 <div class="program-card" data-aos="fade-up" data-aos-delay="400">
@@ -163,28 +109,32 @@
                         <i class="fas fa-robot"></i>
                     </div>
                     <h3>AI Productivity</h3>
-                    <p>Harness AI tools like ChatGPT and Canva AI to boost your productivity.</p>
-                    <ul class="program-features">
-                        <li>Prompt engineering</li>
-                        <li>Automation basics</li>
-                        <li>Ethical use</li>
-                    </ul>
-                    <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <p>Use AI tools to save time and boost your business</p>
+                    <a href="programs.html#ai-tools" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Tech Stack Section -->
-    <section class="tech-stack">
+    <!-- Testimonials -->
+    <section class="testimonials">
         <div class="container">
-            <h4 data-aos="fade-up">We Train On Industry-Standard Tools</h4>
-            <div class="tech-logos">
-                <img src="assets/google-logo.svg" alt="Google" data-aos="fade-up" data-aos-delay="100">
-                <img src="assets/meta-logo.svg" alt="Meta" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/wordpress-logo.svg" alt="WordPress" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/canva-logo.svg" alt="Canva" data-aos="fade-up" data-aos-delay="400">
-                <img src="assets/openai-logo.svg" alt="OpenAI" data-aos="fade-up" data-aos-delay="500">
+            <h2 class="section-title" data-aos="fade-up">Success <span>Stories</span></h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial active" data-aos="fade-up">
+                    <div class="testimonial-content">
+                        <p>"After the training, my shop appears on Google Maps and my sales increased by 40% in just two months!"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonial1.jpg" alt="Sarah K.">
+                            <div>
+                                <h5>Sarah K.</h5>
+                                <span>Market Vendor, Kampala</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- More testimonials would go here -->
             </div>
         </div>
     </section>
@@ -192,12 +142,12 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-content" data-aos="fade-up">
-                <h2>Ready to Transform Lives Through Technology?</h2>
-                <p>Join our mission as a volunteer, partner, or donor.</p>
+            <div class="cta-box" data-aos="fade-up">
+                <h2>Ready to Transform Your Community?</h2>
+                <p>Join our mission as a trainee, volunteer or partner</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn-primary">Donate Now</a>
-                    <a href="#" class="btn-secondary">Partner With Us</a>
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="#" class="btn-secondary">Donate Now</a>
                 </div>
             </div>
         </div>
@@ -208,22 +158,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="assets/logo-white.svg" alt="Tech Samaritans" width="160">
-                    <p>Empowering communities through digital literacy since 2023.</p>
+                    <img src="assets/images/logo-white.svg" alt="Digital Bridge Builders Africa" width="160">
+                    <p>Empowering African communities through digital literacy since 2023.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Programs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
                         <li><a href="#">Impact Stories</a></li>
                         <li><a href="#">Volunteer</a></li>
                         <li><a href="#">Donate</a></li>
@@ -233,15 +182,15 @@
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> contact@techsamaritans.org</li>
-                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</li>
+                        <li><i class="fas fa-envelope"></i> info@digitalbridgeafrica.org</li>
+                        <li><i class="fas fa-phone"></i> +256 XXX XXX XXX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Tech Samaritans. All rights reserved.</p>
+                <p>&copy; 2023 Digital Bridge Builders Africa. All rights reserved.</p>
                 <div class="legal-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
@@ -251,7 +200,6 @@
     </footer>
     
     <!-- JavaScript -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
